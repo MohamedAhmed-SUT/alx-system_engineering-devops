@@ -36,3 +36,8 @@ LOCAL_MACHINE=octarine
 LOGNAME=franky
 [...]
 julien@ubuntu:/tmp/0x03$ 
+
+#!/bin/bash
+printenv
+chmod +x 4-global_variables
+./4-global_variables
