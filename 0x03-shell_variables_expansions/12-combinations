@@ -15,3 +15,8 @@ oq
 or
 os
 julien@ubuntu:/tmp/0x03$ 
+vim 12-combinations
+#!/bin/bash
+echo {a..z}{a..z} | tr ' ' '\n' | grep -v 'oo'
+chmod +x 12-combinations
+./12-combinations | wc -l
