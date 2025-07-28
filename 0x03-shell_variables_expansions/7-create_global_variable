@@ -1,0 +1,7 @@
+vim 7-create_global_variable
+#!/bin/bash
+export BEST="School"
+chmod +x 7-create_global_variable
+source ./7-create_global_variable
+echo $BEST
+julien@ubuntu:/tmp/0x03$ ./7-create_global_variable

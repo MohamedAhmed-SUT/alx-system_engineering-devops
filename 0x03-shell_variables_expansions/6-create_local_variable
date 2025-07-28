@@ -1,0 +1,6 @@
+vim 6-create_local_variable
+#!/bin/bash
+BEST="School"
+chmod +x 6-create_local_variable
+source ./6-create_local_variable
+echo $BEST

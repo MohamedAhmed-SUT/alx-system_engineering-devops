@@ -20,3 +20,10 @@ DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
 DESKTOP_SESSION=ubuntu
 [...]
 julien@ubuntu:/tmp/0x03$ 
+
+vim 5-local_variables
+
+#!/bin/bash
+set
+
+. ./5-local_variables
