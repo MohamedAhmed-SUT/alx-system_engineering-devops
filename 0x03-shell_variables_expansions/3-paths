@@ -1,19 +1,2 @@
-julien@ubuntu:/tmp/0x03$ echo $PATH
-/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-julien@ubuntu:/tmp/0x03$ . ./3-paths 
-11
-julien@ubuntu:/tmp/0x03$ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
-julien@ubuntu:/tmp/0x03$ . ./3-paths 
-12
-julien@ubuntu:/tmp/0x03$ 
-
 #!/bin/bash
-echo "$PATH" | tr ':' '\n' | grep -v -e '^$' | wc -l
-
-chmod +x 3-paths
-# Test with your normal PATH
-. ./3-paths
-
-# Test with the tricky example
-PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
-. ./3-paths
+echo "$PATH" | tr ':' '\n' | grep -v '^$' | wc -l
