@@ -1,2 +1,2 @@
-echo '#!/bin/bash' > 1-hello_you
-echo 'echo "hello $USER"' >> 1-hello_you
+#!/bin/bash
+echo "hello $(whoami)"
