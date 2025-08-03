@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$(( 5#${WATER//[water]/01234} + 4#${STIR//[stir]/0123} ))" | xargs printf "%o\n" | tr 01234567 bestchol
