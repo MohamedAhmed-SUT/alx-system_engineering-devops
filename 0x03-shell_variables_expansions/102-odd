@@ -1,2 +1,2 @@
 #!/bin/bash
-while read -r line; do echo "$line"; read -r _; done
+while read -r line; do echo "$line"; read -r _ || break; done
